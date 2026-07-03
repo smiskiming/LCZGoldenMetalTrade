@@ -6,7 +6,7 @@
   <title>LCZ Golden Metal Trade</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -14,13 +14,16 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#home" class="nav-logo">
-        <img src="LCZ logo.png" alt="LCZ Global Metal Trade" class="logo-img" />
+        <span class="logo-text">LCZ Golden Metal Trade</span>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#products">Products</a></li>
         <li><a href="#industries">Industries</a></li>
-        <li><a href="#investment">Investment</a></li>
+        <li><a href="#global-network">Global Network</a></li>
+        <li><a href="#why-us">Why Us</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -34,12 +37,12 @@
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Building the Future of<br /><span>Metal Trading</span></h1>
-      <p>LCZ Golden Metal Trade is an emerging Malaysian metal trading company committed to delivering quality metal products while creating long-term value through innovation, strategic partnerships, and sustainable growth.</p>
+      <p class="hero-tagline">CONNECTING METAL. CREATING VALUE. BUILDING GLOBAL PARTNERSHIPS.</p>
+      <h1>Malaysia's Trusted Industrial Scrap Metal Sourcing &amp; International Trading Partner</h1>
+      <p class="hero-sub">LCZ GoldenMetal Trade specializes in industrial scrap metal sourcing, ferrous and non-ferrous metal trading, international brokerage, recycling solutions, factory scrap collection, and supply chain coordination.</p>
       <div class="hero-buttons">
-        <a href="#services" class="btn btn-gold">Explore Our Business</a>
-        <a href="#contact" class="btn btn-outline">Contact Us</a>
-        <a href="#investment" class="btn btn-outline">Partner With Us</a>
+        <a href="#quote" class="btn btn-gold">Request a Quote</a>
+        <a href="#contact" class="btn btn-outline-gold">Sell Your Scrap</a>
       </div>
     </div>
   </section>
@@ -47,14 +50,68 @@
   <!-- ===== ABOUT ===== -->
   <section class="about section" id="about">
     <div class="container">
-      <div class="about-grid">
+      <div class="about-top">
         <div class="about-text">
-          <div class="section-tag">About Us</div>
-          <div class="divider-line"></div>
-          <p>LCZ Golden Metal Trade is a growing startup dedicated to providing quality metal products and industrial supply solutions. We focus on building long-term relationships with customers, suppliers, and business partners while creating sustainable business growth.</p>
+          <span class="section-label">About Us</span>
+          <h2>Your Trusted Partner in Industrial Scrap Metal Trading</h2>
+          <p>LCZ Golden Metal Trade is a trusted Malaysian industrial scrap metal sourcing and trading company connecting suppliers and buyers through professional brokerage, recycling solutions, and supply chain coordination.</p>
+          <p>We are committed to integrity, transparency, professionalism, and sustainable recycling practices. Our team delivers competitive sourcing solutions while building lasting partnerships across Southeast Asia and beyond.</p>
         </div>
-        <div class="about-image">
-          <img src="About Us.png" alt="Industrial steel pipes" loading="lazy" />
+        <div class="about-img">
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80" alt="Business partnership handshake" loading="lazy" />
+        </div>
+      </div>
+      <div class="vm-grid">
+        <div class="vm-card">
+          <h3>Our Vision</h3>
+          <p>To become one of Southeast Asia's most trusted industrial scrap metal sourcing and international brokerage companies, delivering reliable trading solutions through professionalism, integrity, and sustainable business practices.</p>
+        </div>
+        <div class="vm-card">
+          <h3>Our Mission</h3>
+          <p>Build long-term partnerships. Deliver competitive sourcing solutions. Support sustainable recycling. Provide professional brokerage services. Create value through innovation. Expand internationally.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CORE VALUES ===== -->
+  <section class="values section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Core Values</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-item">
+          <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+          <span>Integrity</span>
+        </div>
+        <div class="value-item">
+          <div class="value-icon"><i class="fas fa-briefcase"></i></div>
+          <span>Professionalism</span>
+        </div>
+        <div class="value-item">
+          <div class="value-icon"><i class="fas fa-check-circle"></i></div>
+          <span>Reliability</span>
+        </div>
+        <div class="value-item">
+          <div class="value-icon"><i class="fas fa-eye"></i></div>
+          <span>Transparency</span>
+        </div>
+        <div class="value-item">
+          <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+          <span>Innovation</span>
+        </div>
+        <div class="value-item">
+          <div class="value-icon"><i class="fas fa-leaf"></i></div>
+          <span>Sustainability</span>
+        </div>
+        <div class="value-item">
+          <div class="value-icon"><i class="fas fa-heart"></i></div>
+          <span>Customer Commitment</span>
+        </div>
+        <div class="value-item">
+          <div class="value-icon"><i class="fas fa-handshake"></i></div>
+          <span>Long-Term Partnership</span>
         </div>
       </div>
     </div>
@@ -64,81 +121,114 @@
   <section class="services section" id="services">
     <div class="container">
       <div class="section-header">
-        <div class="divider-line centered"></div>
+        <span class="section-label centered">What We Do</span>
         <h2>Our Services</h2>
       </div>
       <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-exchange-alt"></i></div>
-          <h3>Metal Trading</h3>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-search"></i></div>
+          <span>Industrial Scrap Metal Sourcing</span>
         </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-layer-group"></i></div>
-          <h3>Steel Supply</h3>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-exchange-alt"></i></div>
+          <span>Scrap Metal Trading</span>
         </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-cog"></i></div>
-          <h3>Stainless Steel Products</h3>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-globe"></i></div>
+          <span>International Brokerage</span>
         </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-warehouse"></i></div>
-          <h3>Industrial Metal Supply</h3>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-truck-loading"></i></div>
+          <span>Factory Scrap Collection</span>
         </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
-          <h3>Construction Materials</h3>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-trash-alt"></i></div>
+          <span>Industrial Waste Management</span>
         </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-truck"></i></div>
-          <h3>Wholesale Distribution</h3>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-layer-group"></i></div>
+          <span>Ferrous &amp; Non-Ferrous Trading</span>
         </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-tools"></i></div>
-          <h3>Custom Metal Procurement</h3>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-users"></i></div>
+          <span>Buyer &amp; Supplier Matching</span>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-box"></i></div>
+          <span>Logistics Coordination</span>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-link"></i></div>
+          <span>Supply Chain Solutions</span>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-chart-line"></i></div>
+          <span>Market Intelligence</span>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-ship"></i></div>
+          <span>Export &amp; Import Support</span>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-recycle"></i></div>
+          <span>Recycling Consultation</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== WHY CHOOSE ===== -->
-  <section class="why-choose section">
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products section" id="products">
     <div class="container">
       <div class="section-header">
-        <div class="divider-line centered"></div>
-        <h2>Why Choose LCZ Golden Metal Trade</h2>
+        <span class="section-label centered">What We Handle</span>
+        <h2>Our Products</h2>
       </div>
-      <div class="features-grid">
-        <div class="feature-item">
-          <div class="feature-icon"><i class="fas fa-network-wired"></i></div>
-          <span>Reliable Supply Network</span>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80" alt="Ferrous Metals" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <h3>Ferrous Metals</h3>
+            <ul>
+              <li>HMS 1 &amp; HMS 2</li>
+              <li>PNS</li>
+              <li>Steel Scrap</li>
+              <li>Structural Steel</li>
+              <li>Cast Iron</li>
+            </ul>
+          </div>
         </div>
-        <div class="feature-item">
-          <div class="feature-icon"><i class="fas fa-tag"></i></div>
-          <span>Competitive Pricing</span>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Non-Ferrous Metals" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <h3>Non-Ferrous Metals</h3>
+            <ul>
+              <li>Copper</li>
+              <li>Aluminium</li>
+              <li>Brass</li>
+              <li>Stainless Steel</li>
+              <li>Lead, Nickel, Zinc</li>
+            </ul>
+          </div>
         </div>
-        <div class="feature-item">
-          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-          <span>Quality Assurance</span>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon"><i class="fas fa-bolt"></i></div>
-          <span>Fast Response</span>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon"><i class="fas fa-users"></i></div>
-          <span>Customer-Focused Service</span>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon"><i class="fas fa-puzzle-piece"></i></div>
-          <span>Flexible Business Solutions</span>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
-          <span>Startup Innovation</span>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon"><i class="fas fa-handshake"></i></div>
-          <span>Long-Term Partnership</span>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?w=600&q=80" alt="Industrial Scrap" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <h3>Industrial Scrap</h3>
+            <ul>
+              <li>Electric Motors</li>
+              <li>Transformers</li>
+              <li>Compressors</li>
+              <li>Industrial Machinery</li>
+              <li>Cable Scrap</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -148,179 +238,235 @@
   <section class="industries section" id="industries">
     <div class="container">
       <div class="section-header">
-        <div class="divider-line centered"></div>
+        <span class="section-label centered">Who We Serve</span>
         <h2>Industries We Serve</h2>
       </div>
       <div class="industries-grid">
-        <div class="industry-card">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&q=80" alt="Construction" loading="lazy" />
-          <div class="industry-label">Construction</div>
+        <div class="ind-card">
+          <div class="ind-icon"><i class="fas fa-industry"></i></div>
+          <span>Manufacturing</span>
         </div>
-        <div class="industry-card">
-          <img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=500&q=80" alt="Manufacturing" loading="lazy" />
-          <div class="industry-label">Manufacturing</div>
+        <div class="ind-card">
+          <div class="ind-icon"><i class="fas fa-building"></i></div>
+          <span>Construction</span>
         </div>
-        <div class="industry-card">
-          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&q=80" alt="Engineering" loading="lazy" />
-          <div class="industry-label">Engineering</div>
+        <div class="ind-card">
+          <div class="ind-icon"><i class="fas fa-warehouse"></i></div>
+          <span>Industrial Parks</span>
         </div>
-        <div class="industry-card">
-          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=500&q=80" alt="Infrastructure" loading="lazy" />
-          <div class="industry-label">Infrastructure</div>
+        <div class="ind-card">
+          <div class="ind-icon"><i class="fas fa-wrench"></i></div>
+          <span>Engineering</span>
         </div>
-        <div class="industry-card">
-          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&q=80" alt="Fabrication" loading="lazy" />
-          <div class="industry-label">Fabrication</div>
+        <div class="ind-card">
+          <div class="ind-icon"><i class="fas fa-car"></i></div>
+          <span>Automotive</span>
         </div>
-        <div class="industry-card">
-          <img src="https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?w=500&q=80" alt="Industrial Projects" loading="lazy" />
-          <div class="industry-label">Industrial Projects</div>
+        <div class="ind-card">
+          <div class="ind-icon"><i class="fas fa-anchor"></i></div>
+          <span>Marine &amp; Shipyards</span>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== INVESTMENT ===== -->
-  <section class="investment section" id="investment">
-    <div class="container">
-      <div class="investment-grid">
-        <div class="investment-image">
-          <img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=700&q=80" alt="Metal warehouse interior" loading="lazy" />
+        <div class="ind-card">
+          <div class="ind-icon"><i class="fas fa-fire"></i></div>
+          <span>Oil &amp; Gas</span>
         </div>
-        <div class="investment-content">
-          <div class="divider-line"></div>
-          <h2>Grow With LCZ Golden Metal Trade</h2>
-          <p>LCZ Golden Metal Trade welcomes discussions with strategic investors and business partners who share our long-term vision. As a growing startup, we are focused on expanding our operations, strengthening our supply network, and delivering sustainable value.</p>
-          <ul class="investment-list">
-            <li><i class="fas fa-check-circle"></i> Inventory Expansion</li>
-            <li><i class="fas fa-check-circle"></i> Warehouse Development</li>
-            <li><i class="fas fa-check-circle"></i> Logistics Improvement</li>
-            <li><i class="fas fa-check-circle"></i> Business Expansion</li>
-            <li><i class="fas fa-check-circle"></i> Digital Transformation</li>
-            <li><i class="fas fa-check-circle"></i> Strategic Partnerships</li>
-          </ul>
-          <a href="#contact" class="btn btn-gold">Contact the Team</a>
+        <div class="ind-card">
+          <div class="ind-icon"><i class="fas fa-recycle"></i></div>
+          <span>Recycling Companies</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== VISION & MISSION ===== -->
-  <section class="vision-mission section">
+  <!-- ===== OUR PROCESS ===== -->
+  <section class="process section">
     <div class="container">
       <div class="section-header">
-        <div class="divider-line centered gold"></div>
-        <h2>Vision &amp; Mission</h2>
+        <span class="section-label centered">How We Work</span>
+        <h2>Our Process</h2>
       </div>
-      <div class="vm-grid">
-        <div class="vm-card">
-          <h3><span class="vm-badge"></span>Our Vision</h3>
-          <p>To become one of Malaysia's most trusted and innovative metal trading companies through quality products, reliable service, and sustainable growth.</p>
+      <div class="process-flow">
+        <div class="process-step">
+          <div class="process-dot"></div>
+          <div class="process-box">Factory / Supplier Engagement</div>
         </div>
-        <div class="vm-card">
-          <h3><span class="vm-badge"></span>Our Mission</h3>
-          <ul>
-            <li><i class="fas fa-check-circle"></i> Deliver quality metal products</li>
-            <li><i class="fas fa-check-circle"></i> Build trusted partnerships</li>
-            <li><i class="fas fa-check-circle"></i> Support industrial growth</li>
-            <li><i class="fas fa-check-circle"></i> Create long-term business value</li>
-          </ul>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-dot"></div>
+          <div class="process-box">Material Assessment &amp; Inspection</div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-dot"></div>
+          <div class="process-box">Market Analysis &amp; Buyer Matching</div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-dot"></div>
+          <div class="process-box">Commercial Negotiation</div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-dot"></div>
+          <div class="process-box">Contract Agreement</div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-dot"></div>
+          <div class="process-box">Collection &amp; Logistics Coordination</div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-dot"></div>
+          <div class="process-box">Successful Delivery &amp; Long-Term Partnership</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== BUSINESS ROADMAP ===== -->
-  <section class="roadmap section">
+  <!-- ===== WHY US ===== -->
+  <section class="why-us section" id="why-us">
     <div class="container">
       <div class="section-header">
-        <div class="divider-line centered"></div>
-        <h2>Business Roadmap</h2>
+        <h2>Why Choose LCZ Golden Metal Trade</h2>
       </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-badge">2026</div>
-          <div class="timeline-content">
-            <p>Company establishment &bull; Supplier partnerships &bull; Website launch &bull; Customer acquisition</p>
-          </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-user-tie"></i></div>
+          <span>Professional sourcing expertise with deep industry knowledge</span>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-badge">2027</div>
-          <div class="timeline-content">
-            <p>Expand inventory &bull; Increase customer base &bull; Strengthen logistics</p>
-          </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-network-wired"></i></div>
+          <span>Reliable supplier network across Southeast Asia</span>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-badge">2028</div>
-          <div class="timeline-content">
-            <p>Warehouse development &bull; Regional expansion &bull; Strategic partnerships</p>
-          </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-user-check"></i></div>
+          <span>Verified buyers and transparent communication</span>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-badge">2029+</div>
-          <div class="timeline-content">
-            <p>National growth &bull; Industry recognition &bull; Long-term sustainability</p>
-          </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-comment-alt"></i></div>
+          <span>Fast response and professional documentation</span>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-chart-line"></i></div>
+          <span>Competitive market knowledge and pricing</span>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-globe-asia"></i></div>
+          <span>International trading capability and expansion</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ===== GLOBAL NETWORK ===== -->
+  <section class="global-network section" id="global-network">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label centered">Our Reach</span>
+        <h2>Global Network</h2>
+        <p class="section-sub">Connecting suppliers and buyers across Asia, the Middle East, and beyond through trusted partnerships and professional brokerage.</p>
+      </div>
+      <div class="country-grid">
+        <div class="country-tag">Malaysia</div>
+        <div class="country-tag">Singapore</div>
+        <div class="country-tag">Indonesia</div>
+        <div class="country-tag">Thailand</div>
+        <div class="country-tag">Vietnam</div>
+        <div class="country-tag">China</div>
+        <div class="country-tag">India</div>
+        <div class="country-tag">Dubai (UAE)</div>
+        <div class="country-tag">Middle East</div>
+        <div class="country-tag">Future Markets</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REQUEST A QUOTE ===== -->
+  <section class="quote section" id="quote">
+    <div class="container quote-container">
+      <div class="section-header">
+        <h2>Request a Quote</h2>
+        <p class="section-sub">Tell us about your requirements and our team will respond within 24 hours.</p>
+      </div>
+      <form id="quoteForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="qCompany">Company Name</label>
+            <input type="text" id="qCompany" name="company" />
+          </div>
+          <div class="form-group">
+            <label for="qContact">Contact Person</label>
+            <input type="text" id="qContact" name="contact" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="qEmail">Email</label>
+            <input type="email" id="qEmail" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="qPhone">Phone</label>
+            <input type="tel" id="qPhone" name="phone" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="qCountry">Country</label>
+            <input type="text" id="qCountry" name="country" />
+          </div>
+          <div class="form-group">
+            <label for="qMaterial">Material Type</label>
+            <input type="text" id="qMaterial" name="material" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="qNotes">Additional Notes</label>
+          <textarea id="qNotes" name="notes" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold btn-full">Submit Enquiry</button>
+        <p class="form-success" id="quoteSuccess">Enquiry submitted! We'll respond within 24 hours.</p>
+      </form>
     </div>
   </section>
 
   <!-- ===== CONTACT ===== -->
   <section class="contact section" id="contact">
     <div class="container">
-      <div class="section-header">
-        <div class="divider-line centered"></div>
-        <h2>Contact Us</h2>
-      </div>
       <div class="contact-grid">
         <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div>
-              <h4>Business Address</h4>
-              <p>Kuala Lumpur, Malaysia</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-phone"></i></div>
-            <div>
-              <h4>Phone</h4>
-              <p>+60 12-345 6789</p>
-            </div>
-          </div>
+          <h2>Get in Touch</h2>
           <div class="contact-item">
             <div class="contact-icon"><i class="fas fa-envelope"></i></div>
             <div>
-              <h4>Email</h4>
-              <p>info@lczgoldenmetal.com</p>
+              <p class="ci-label">Email</p>
+              <p class="ci-value">lczgoldenmetaltrade@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <p class="ci-label">WhatsApp</p>
+              <p class="ci-value">+60 11 6921 7721</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="ci-label">Office</p>
+              <p class="ci-value">Kuala Lumpur, Malaysia</p>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-icon"><i class="fas fa-clock"></i></div>
             <div>
-              <h4>Business Hours</h4>
-              <p>Mon&ndash;Fri: 9:00 AM &ndash; 6:00 PM</p>
+              <p class="ci-label">Business Hours</p>
+              <p class="ci-value">Mon&ndash;Fri: 9:00 AM &ndash; 6:00 PM (MYT)</p>
             </div>
           </div>
         </div>
-        <div class="contact-form">
-          <form id="contactForm" novalidate>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-gold btn-full">Send Message</button>
-            <p class="form-success" id="formSuccess">Message sent! We'll be in touch shortly.</p>
-          </form>
+        <div class="contact-img">
+          <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=900&q=80" alt="Port container terminal" loading="lazy" />
         </div>
       </div>
     </div>
@@ -331,28 +477,28 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="footer-logo">
-            <i class="fas fa-industry"></i>
-            LCZ Golden Metal Trade
-          </div>
-          <p>An emerging Malaysian metal trading company focused on quality, innovation, and sustainable growth.</p>
+          <div class="footer-logo">LCZ Golden Metal Trade</div>
+          <p>Connecting Metal. Creating Value. Building Global Partnerships.</p>
         </div>
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
             <li><a href="#industries">Industries</a></li>
-            <li><a href="#investment">Investment</a></li>
+            <li><a href="#global-network">Global Network</a></li>
+            <li><a href="#why-us">Why Us</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Legal</h4>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms &amp; Conditions</a></li>
-          </ul>
+          <h4>Connect</h4>
+          <div class="footer-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:lczgoldenmetaltrade@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+601169217721" aria-label="Phone"><i class="fas fa-phone"></i></a>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
