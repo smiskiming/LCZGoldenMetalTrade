@@ -116,12 +116,15 @@ ul { list-style: none; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  background: var(--navy);
-  border-bottom: 1px solid var(--border);
-  transition: box-shadow var(--transition);
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 .navbar.scrolled {
+  background: rgba(10, 15, 28, 0.97);
+  border-bottom: 1px solid var(--border);
   box-shadow: 0 2px 24px rgba(0,0,0,.5);
+  backdrop-filter: blur(8px);
 }
 
 .nav-container {
@@ -138,9 +141,10 @@ ul { list-style: none; }
 .logo-text {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--gold);
+  letter-spacing: -.1px;
 }
 
 .nav-links {
@@ -149,10 +153,10 @@ ul { list-style: none; }
   align-items: center;
 }
 .nav-links li a {
-  padding: 6px 12px;
-  font-size: .82rem;
+  padding: 6px 13px;
+  font-size: .84rem;
   font-weight: 500;
-  color: var(--text);
+  color: rgba(255,255,255,.92);
   border-radius: 6px;
   transition: color var(--transition);
 }
@@ -214,27 +218,31 @@ ul { list-style: none; }
   animation: fadeUp 1s ease both;
 }
 .hero-tagline {
-  font-size: .72rem;
+  font-family: var(--font);
+  font-size: .75rem;
   font-weight: 700;
-  letter-spacing: 2.5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 .hero-content h1 {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 5vw, 3.6rem);
-  font-weight: 700;
-  line-height: 1.2;
+  font-size: clamp(2.2rem, 5.5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.18;
   color: var(--white);
-  margin-bottom: 22px;
+  margin-bottom: 24px;
+  letter-spacing: -.3px;
 }
 .hero-sub {
-  font-size: clamp(.9rem, 1.3vw, 1rem);
-  color: rgba(255,255,255,.75);
-  max-width: 720px;
-  margin: 0 auto 40px;
-  line-height: 1.85;
+  font-family: var(--font);
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  font-weight: 400;
+  color: rgba(255,255,255,.78);
+  max-width: 740px;
+  margin: 0 auto 42px;
+  line-height: 1.8;
 }
 .hero-buttons {
   display: flex;
